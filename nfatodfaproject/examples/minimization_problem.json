@@ -1,0 +1,1 @@
+{"states":["q1","q2","q3"],"finalStates":["q2","q3"],"initialState":["q1"],"alphabet":["a","b"],"transitions":[{"state":"q1","nextState":"q2","symbol":"a"},{"state":"q1","nextState":"q1","symbol":"b"},{"state":"q2","nextState":"q3","symbol":"a"},{"state":"q2","nextState":"q2","symbol":"b"},{"state":"q3","nextState":"q2","symbol":"a"},{"state":"q3","nextState":"q3","symbol":"b"}]}

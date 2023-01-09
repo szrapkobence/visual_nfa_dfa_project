@@ -1,0 +1,118 @@
+{
+  "states": [ "q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10", "q11" ],
+  "finalStates": [ "q1", "q3", "q4", "q7","q8" ],
+  "initialState": [ "q1" ],
+  "alphabet": [ "a", "b" ],
+  "transitions": [
+    {
+      "state": "q1",
+      "nextState": "q2",
+      "symbol": "a"
+    },
+    {
+      "state": "q1",
+      "nextState": "q6",
+      "symbol": "b"
+    },
+    {
+      "state": "q2",
+      "nextState": "q5",
+      "symbol": "a"
+    },
+    {
+      "state": "q2",
+      "nextState": "q1",
+      "symbol": "b"
+    },
+    {
+      "state": "q3",
+      "nextState": "q4",
+      "symbol": "a"
+    },
+    {
+      "state": "q3",
+      "nextState": "q6",
+      "symbol": "b"
+    },
+    {
+      "state": "q4",
+      "nextState": "q7",
+      "symbol": "a"
+    },
+    {
+      "state": "q4",
+      "nextState": "q2",
+      "symbol": "b"
+    },
+    {
+      "state": "q5",
+      "nextState": "q11",
+      "symbol": "a"
+    },
+    {
+      "state": "q5",
+      "nextState": "q1",
+      "symbol": "b"
+    },
+    {
+      "state": "q6",
+      "nextState": "q7",
+      "symbol": "a"
+    },
+    {
+      "state": "q6",
+      "nextState": "q3",
+      "symbol": "b"
+    },
+    {
+      "state": "q7",
+      "nextState": "q11",
+      "symbol": "a"
+    },
+    {
+      "state": "q7",
+      "nextState": "q10",
+      "symbol": "b"
+    },
+    {
+      "state": "q8",
+      "nextState": "q4",
+      "symbol": "a"
+    },
+    {
+      "state": "q8",
+      "nextState": "q9",
+      "symbol": "b"
+    },
+    {
+      "state": "q9",
+      "nextState": "q1",
+      "symbol": "a"
+    },
+    {
+      "state": "q9",
+      "nextState": "q3",
+      "symbol": "b"
+    },
+    {
+      "state": "q10",
+      "nextState": "q7",
+      "symbol": "a"
+    },
+    {
+      "state": "q10",
+      "nextState": "q8",
+      "symbol": "b"
+    },
+    {
+      "state": "q11",
+      "nextState": "q11",
+      "symbol": "a"
+    },
+    {
+      "state": "q11",
+      "nextState": "q7",
+      "symbol": "b"
+    }
+  ]
+}

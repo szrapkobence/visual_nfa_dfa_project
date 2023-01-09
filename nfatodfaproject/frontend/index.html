@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NFA -> DFA</title>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+  </head>  
+  <div id="node-popUp">
+    <span id="node-operation">node</span> <br />
+    <table style="margin: auto">
+      <tbody>
+        <!-- 
+        <tr>
+          <td>id</td>
+          <td><input id="node-id" value="new value" /></td>
+        </tr>-->
+        <!-- 
+        <tr>
+          <td>label</td>
+          <td><input id="node-label" value="new value" /></td>
+        </tr>-->
+        <tr>
+          <td><button type="checkbox" id="final-state">final state</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <input type="button" value="save" id="node-saveButton" />
+    <input type="button" value="cancel" id="node-cancelButton" />
+  </div>
+  
+  <div id="edge-popUp">
+    <span id="edge-operation">edge</span> <br />
+    <table style="margin: auto">
+      <tbody>
+        <tr>
+          <td>label</td>
+          <td><input id="edge-label" value="new value" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="button" value="save" id="edge-saveButton" />
+    <input type="button" value="cancel" id="edge-cancelButton" />
+  </div>
+  
+    <div id="lefttoolbar" style="text-align: left;">
+      <button id="button" onclick="startMINNetwork();startNetwork();draw();deleteAllAPIData()">New Automaton</button>
+      <button id="button" onclick="logData()">Enter NFA</button>
+    </div>
+  
+    <div id="righttoolbar" style="text-align: left;">
+        <button id="button" onclick="getDFA()">Generate DFA</button>
+        <input type="button" value="begin" id="button" onclick="startDFA()">
+        <input type="button" value="prev" id="button" onclick="prevStepDFA()">
+        <input type="button" value="next" id="button" onclick="nextStepDFA()">
+        <input type="button" value="complete" id="button" onclick="completeDFA()">
+    </div>
+    <div id="righttoolbar2">
+      <input type="button" value="Minimal DFA" id="button" onclick="getminDFA();getVisibleDFA()">
+    </div>
+
+    <br>
+  <div>
+    <div id="mynetwork"></div>
+    <div id="dfa"></div>
+    <div id="mindfa"></div>
+
+  </div>
+  <div>
+    <button id="button" onclick="openFile(dispFile)">Import</button>
+    <button id="button" onclick="exportData()">Export</button>
+    <pre id="contents"></pre>
+  </div>
+
+
+<script src="frontend.js"></script>
+<script src="visualDFA.js"></script>
+<script src="mindfa.js"></script>
+
+</html>
