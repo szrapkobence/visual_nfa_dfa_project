@@ -12,9 +12,3 @@ Automata can be saved as JSON files.
 The software itself is made up of two parts: the front-end, where the graphical 
 display and manipulation by the user takes place, and the back-end, which processes the 
 specified finite automata.
-
-Install:
-• Open project folder in VS Code (or your choice of dev environment)
-• npm install -g
-• node nfa.js
-• By opening index.html in the frontend subfolder we can reach the frontend.
